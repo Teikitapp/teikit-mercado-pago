@@ -1,0 +1,115 @@
+
+
+.divCardProductoComercio{
+    background-color: rgba(224,166,127,255);
+    /* height: 300px; */
+
+    border-radius: 24px;
+    padding-top: 10px;
+    border-radius: 20px;
+    height: 240px;
+    width: 300px;
+}
+.imgProducto{
+    height: 230px;
+    /* width: 190px; */
+    border-radius: 100px;
+    padding-bottom: 0px;
+    /* padding-top: 10px; */
+    /* align-items: center; */
+    padding-left: 15px;
+}
+.textoCardProductoComercio{
+    padding-top: 20px;
+    background-color: rgba(242, 130, 65, 255);
+    height: 150px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* padding-left: 15px; */
+    font-size: 15px;
+    /* text-align: left; */
+    height: 180px;
+    width: 300px;
+    /*display: flex;
+    align-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: flex-end;*/
+}
+
+
+.cardNombreProducto{
+    text-align: justify;
+    color: white;
+    
+}
+.cardPrecioProducto{
+    text-align: justify;
+    color: white;
+    font-weight: bold;
+}
+
+
+.cardBotonVerDetalles{
+    height: 40px;
+    width: 145px;
+    /* justify-content: center; */
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    color: rgba(242,130,65,255);
+    border-radius: 15px;
+    /* border: 1px solid white; */
+    /* margin: 0px; */
+    cursor: pointer;
+    font-size: 17px;
+    margin: 20px 0px 0px 35px;
+    border: none;
+}
+.espacioEntreCardComercio{
+ padding-bottom: 15px;
+}
+.subTitulos{
+    font-weight: bold;
+}
+
+.divCasilleroComercio{
+    color: rgba(245, 76, 9, 255);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.espacioIz{
+    padding-left: 50px;
+    text-align: right;
+}
+.espacioD{
+    text-align: right;
+    padding-right: 30px;
+}
+
+.cardBotonCambiaEstado{
+    height: 35px;
+    width: 190px;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #FC4B08;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 10px 10px 0px;
+    border: none;
+}
+.ordenDiv{
+    display: flex;
+        align-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+}

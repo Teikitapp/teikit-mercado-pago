@@ -1,0 +1,201 @@
+.divCardTodosProductosVerDetalle{
+    bottom: 0;
+    width: 1100px;
+    /* height: 100%; */
+    text-align: center;
+    /* padding-left: 45px; */
+    align-content: flex-start;
+ }
+ .formatoCardVerDetalle{
+    
+    display: flex;
+    flex: 1 1 1 ;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+} 
+.divCardProductoVerDetalle{
+    background-color: rgba(224,166,127,255);
+    /* height: 300px; */
+    width: 250px;
+    border-radius: 24px;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+.imagengProductoVerDetalle{
+    height: 190px;
+    width: 180px;
+    border-radius: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.textoCardProductoVerDetalle{
+    padding-top: 20px;
+    background-color: rgba(242, 130, 65, 255);
+    height: 170px;
+
+    padding-left: 15px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.nombreProductoVerDetalle{
+    text-align: justify;
+    color:  rgba(242, 130, 65, 255);
+    font-weight: bold;
+    font-size: 35px;
+}
+.sectorProductoVerDetalle{
+    text-align: justify;
+    color:  rgba(242, 130, 65, 255);
+    font-size: 18px;
+}
+.precioProductoVerDetalle{
+    text-align: justify;
+    color:  rgba(242, 130, 65, 255);
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 40px;
+}
+.divLogo{
+    background-color: rgba(242, 130, 65, 255);
+    height: 200px;
+    border-radius: 50px;
+    /* border-bottom-left-radius: 50px; */
+    /* border-bottom-right-radius: 50px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+.divLogoYtexto{
+    /* background: red; */
+    width: 900px;
+    /* align-content: revert; */
+    /* align-items: flex-start; */
+    /* text-align: center; */
+    display: flex;
+    /* flex: 1 1; */
+    /* justify-content: space-evenly; */
+    height: 230px;
+    padding-top: 12px;
+   
+}
+.divTexto{
+    padding-left: 45px;
+    padding-top: 20px;
+}
+.textoDescripcion{
+ color: white;
+ text-align: justify;
+}
+.divCantidadYboton{
+    width: 900px; 
+    display: flex;
+    height: 230px;
+    padding-top: 5px;
+    justify-content: space-between;
+}
+.cardBotonMas {
+    background: rgba(242, 130, 65, 255);
+    height: 40px;
+    width: 40px;
+    border-radius: 22px;
+    font-size: 31px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+ 
+}
+
+.cardBotonMenos {
+    background: rgba(242, 130, 65, 255);
+    height: 40px;
+    width: 40px;
+    border-radius: 22px;
+    font-size: 33px;
+    font-weight: bold;
+    color: white;
+    padding-left: 4px;
+    cursor: pointer;
+    
+}
+.textoCantidad{
+color: rgba(242, 130, 65, 255);
+font-size: 27px;
+font-weight: bold;
+padding-left: 18px;
+padding-right: 18px;
+}
+.cantidad{
+    height: 40px;
+    width: 250px;
+    padding-top: 25px;
+}
+.botonVerDetalles{
+    height: 50px;
+    width: 180px;
+    /* justify-content: center; */
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgba(242, 130, 65, 255);
+    color: white;
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    /* margin: 0px; */
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0px 0px 0px;
+    border: none;
+}
+.botonVerDetalles:hover{
+    background-color: #33a854;
+    color: white;
+}
+.botonVolver{
+    height: 50px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fc4b08;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 20px 0px 0px;
+    border: none;
+}
+.botonVolver:hover{
+    background: #f18449;
+    color: white;
+   
+  }
+
+.botonAtras{
+    flex-direction: column;
+    height: 40px;
+    width: 170px;
+    flex: 1 1;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 21px;
+    background-color: #FC4B08;
+    color: white;
+    border-radius: 15px;
+    border: 3px solid #FC4B08;
+    margin: 4px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    align-items: center;
+    font-family: "Arial";
+    text-shadow: 1px 1px 0px #FC4B08;
+    margin: 25px;
+}
+
+.botonAtras:hover{
+    background: rgba(242, 130, 65, 255);
+    color: white;
+    border: 3px solid rgba(242, 130, 65, 255);
+    text-shadow: 0px 0px 0px rgba(242, 130, 65, 255);
+}

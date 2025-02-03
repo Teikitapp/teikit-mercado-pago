@@ -1,0 +1,39 @@
+.btnIngresar{
+    height: 50px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fc4b08;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 20px 0px 0px;
+    border: none;
+}
+.divIngresar{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+
+}
+.mensajeError{
+    margin: 5px ;
+    font-weight: bold;
+    color: red;
+}
+.mensajeExito{
+    margin: 5px ;
+    font-weight: bold;
+    color: rgb(53, 149, 53);
+}
+.divBtnRegistrar{
+    display: flex;
+    width: 900px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.footerModalLogin{
+    /*background-color: rgba(242, 130, 65, 255);*/
+}

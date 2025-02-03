@@ -1,0 +1,82 @@
+.divCardTodosProductos{
+    bottom: 0;
+    width: 1100px;
+    /* height: 100%; */
+    text-align: center;
+    /* padding-left: 45px; */
+    align-content: flex-start;
+    display: flex;
+    flex: 1 1 1 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .formatoCard{
+    
+    display: flex;
+    flex: 1 1 1 ;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+} 
+.divCardProducto{
+    background-color: rgba(224,166,127,255);
+    /* height: 300px; */
+    width: 250px;
+    border-radius: 24px;
+    padding-top: 10px;
+    border-radius: 50px;
+}
+.imgProducto{
+    height: 230px;
+    /* width: 190px; */
+    border-radius: 100px;
+    padding-bottom: 0px;
+    /* padding-top: 10px; */
+    /* align-items: center; */
+    padding-left: 15px;
+}
+.textoCardProducto{
+    padding-top: 20px;
+    background-color: rgba(242,130,65,255);
+    height: 150px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-left: 15px;
+   
+    font-size: 18px;
+}
+/* .test{
+    padding: 0px 45px 0px 25px;
+    text-align: justify;
+    font-size: 18px;
+} */
+.cardNombreProducto{
+    text-align: justify;
+    color: white;
+    
+}
+.cardPrecioProducto{
+    text-align: justify;
+    color: white;
+    font-weight: bold;
+}
+
+.cardBotonVerDetalles{
+    height: 40px;
+    width: 145px;
+    /* justify-content: center; */
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+    color: rgba(242,130,65,255);
+    border-radius: 15px;
+    /* border: 1px solid white; */
+    /* margin: 0px; */
+    cursor: pointer;
+    font-size: 17px;
+    margin: 20px 0px 0px 35px;
+    border: none;
+}
+.espacioEntreCard{
+ padding-bottom: 15px;
+}
