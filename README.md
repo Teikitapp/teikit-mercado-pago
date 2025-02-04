@@ -1,1 +1,0 @@
-# Aplicacion web de Teikit
