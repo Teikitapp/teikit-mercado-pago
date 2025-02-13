@@ -40,9 +40,9 @@ app.post("/create_preference", async (req, res) => {
                 }               
             ],
             back_urls:{
-                success:"http://localhost:3000/login",
-                failure:"http://localhost:3000/login",
-                pending:"http://localhost:3000/login"
+                success:"https://www.teikit.cl/login",
+                failure:"https://www.teikit.cl/login",
+                pending:"https://www.teikit.cl/login"
             },
             notification_url: "https://3bd5-45-238-155-49.ngrok-free.app/webhook"
             
@@ -100,7 +100,7 @@ app.post("/webhook", async function (req, res) {
 
 const  serviciosPago = async (idCompra) => {
     try{
-        const responsePedido = await fetch(`http://localhost:8080/api/pedido/actualizarPagoPedido/${idDelPedido}-${idCompra}-${200}`,{
+        const responsePedido = await fetch(`https://api.teikit.cl/api/pedido/actualizarPagoPedido/${idDelPedido}-${idCompra}-${200}`,{
             method:'PUT'
             
         })
@@ -109,7 +109,7 @@ const  serviciosPago = async (idCompra) => {
         console.log("Pedido ok-->: ",datap);
 
         try {
-            const responseCasillero= await fetch(`http://localhost:8080/api/casillero/actualizarEstadoCasillero/${casillero}-${2}`,{
+            const responseCasillero= await fetch(`https://api.teikit.cl/api/casillero/actualizarEstadoCasillero/${casillero}-${2}`,{
                 method:'PUT'                   
             })
             if (responseCasillero) {
