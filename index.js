@@ -9,12 +9,18 @@ const PENDING_URL = process.env.REACT_APP_PENDING_URL;
 const NOTIFICATION_URL = process.env.REACT_APP_NOTIFICATION_URL;
 const MP_API_WALLET_URL = process.env.REACT_APP_MP_API_WALLET_URL;
 const BACKEND_API_URL = process.env.REACT_APP_BACKEND_API_URL;
+const FRONTEND_API_URL = process.env.REACT_APP_FRONTEND_API_URL;
 
 const client = new MercadoPagoConfig({ accessToken: MERCADOPAGO_ACCESS_TOKEN });
 const app = express();
 let idCompra = null, idDelPedido = null, casillero = null;
 
-app.use(cors());
+app.use(cors({
+    origin: FRONTEND_API_URL,  // Solo permite solicitudes desde este dominio
+    methods: ['GET', 'POST'],         // Especifica los métodos permitidos
+    allowedHeaders: ['Content-Type']  // Especifica los encabezados permitidos
+  }));
+  
 app.use(express.json());
 
 app.get("/", (req, res) => res.send("Soy el servidor"));
