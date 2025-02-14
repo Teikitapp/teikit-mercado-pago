@@ -2,14 +2,14 @@ import express from "express";
 import cors from "cors";
 import { MercadoPagoConfig, Preference } from "mercadopago";
 
-const MERCADOPAGO_ACCESS_TOKEN = process.env.MERCADOPAGO_ACCESS_TOKEN;
-const PORT = process.env.PORT || 3001;
-const SUCCESS_URL = process.env.SUCCESS_URL;
-const FAILURE_URL = process.env.FAILURE_URL;
-const PENDING_URL = process.env.PENDING_URL;
-const NOTIFICATION_URL = process.env.NOTIFICATION_URL;
-const MP_API_URL = process.env.MP_API_URL;
-const FRONTEND_API_URL = process.env.FRONTEND_API_URL;
+const MERCADOPAGO_ACCESS_TOKEN = process.env.REACT_APP_MERCADOPAGO_ACCESS_TOKEN;
+const PORT = process.env.REACT_APP_PORT || 3001;
+const SUCCESS_URL = process.env.REACT_APP_SUCCESS_URL;
+const FAILURE_URL = process.env.REACT_APP_FAILURE_URL;
+const PENDING_URL = process.env.REACT_APP_PENDING_URL;
+const NOTIFICATION_URL = process.env.REACT_APP_NOTIFICATION_URL;
+const MP_API_URL = process.env.REACT_APP_MP_API_URL;
+const FRONTEND_API_URL = process.env.REACT_APP_FRONTEND_API_URL;
 
 const client = new MercadoPagoConfig({ accessToken: MERCADOPAGO_ACCESS_TOKEN });
 const app = express();
