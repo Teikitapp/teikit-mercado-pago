@@ -8,7 +8,7 @@ const SUCCESS_URL = process.env.REACT_APP_SUCCESS_URL;
 const FAILURE_URL = process.env.REACT_APP_FAILURE_URL;
 const PENDING_URL = process.env.REACT_APP_PENDING_URL;
 const NOTIFICATION_URL = process.env.REACT_APP_NOTIFICATION_URL;
-const MP_API_URL = process.env.REACT_APP_MP_API_URL;
+const MP_API_WALLET_URL = process.env.REACT_APP_MP_API_WALLET_URL;
 const FRONTEND_API_URL = process.env.REACT_APP_FRONTEND_API_URL;
 
 const client = new MercadoPagoConfig({ accessToken: MERCADOPAGO_ACCESS_TOKEN });
@@ -45,7 +45,7 @@ app.post("/create_preference", async (req, res) => {
 app.post("/webhook", async (req, res) => {
     const paymentId = req.query.id;
     try {
-        const response = await fetch(`${MP_API_URL}/v1/payments/${paymentId}`, {
+        const response = await fetch(`${MP_API_WALLET_URL}/v1/payments/${paymentId}`, {
             method: 'GET',
             headers: { 'Authorization': `Bearer ${client.accessToken}` }
         });
