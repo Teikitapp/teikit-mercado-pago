@@ -3,7 +3,6 @@ import cors from "cors";
 import { MercadoPagoConfig, Preference } from "mercadopago";
 
 const MERCADOPAGO_ACCESS_TOKEN = process.env.REACT_APP_MERCADOPAGO_ACCESS_TOKEN;
-const PORT = process.env.REACT_APP_PORT || 3001;
 const SUCCESS_URL = process.env.REACT_APP_SUCCESS_URL;
 const FAILURE_URL = process.env.REACT_APP_FAILURE_URL;
 const PENDING_URL = process.env.REACT_APP_PENDING_URL;
@@ -81,5 +80,3 @@ const serviciosPago = async (idCompra) => {
         console.error("Error al actualizar pedido:", error);
     }
 };
-
-app.listen(PORT, () => console.log(`El servidor está corriendo en el puerto ${PORT}`));
