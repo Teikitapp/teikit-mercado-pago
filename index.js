@@ -8,7 +8,7 @@ const FAILURE_URL = process.env.REACT_APP_FAILURE_URL;
 const PENDING_URL = process.env.REACT_APP_PENDING_URL;
 const NOTIFICATION_URL = process.env.REACT_APP_NOTIFICATION_URL;
 const MP_API_WALLET_URL = process.env.REACT_APP_MP_API_WALLET_URL;
-const FRONTEND_API_URL = process.env.REACT_APP_FRONTEND_API_URL;
+const BACKEND_API_URL = process.env.REACT_APP_BACKEND_API_URL;
 
 const client = new MercadoPagoConfig({ accessToken: MERCADOPAGO_ACCESS_TOKEN });
 const app = express();
@@ -62,12 +62,12 @@ app.post("/webhook", async (req, res) => {
 
 const serviciosPago = async (idCompra) => {
     try {
-        const responsePedido = await fetch(`${FRONTEND_API_URL}/api/pedido/actualizarPagoPedido/${idDelPedido}-${idCompra}-200`, { method: 'PUT' });
+        const responsePedido = await fetch(`${BACKEND_API_URL}/api/pedido/actualizarPagoPedido/${idDelPedido}-${idCompra}-200`, { method: 'PUT' });
         if (responsePedido.ok) {
             const datap = await responsePedido.json();
             console.log("Pedido actualizado:", datap);
             try {
-                const responseCasillero = await fetch(`${FRONTEND_API_URL}/api/casillero/actualizarEstadoCasillero/${casillero}-2`, { method: 'PUT' });
+                const responseCasillero = await fetch(`${BACKEND_API_URL}/api/casillero/actualizarEstadoCasillero/${casillero}-2`, { method: 'PUT' });
                 if (responseCasillero.ok) {
                     const datac = await responseCasillero.json();
                     console.log("Casillero actualizado:", datac);
