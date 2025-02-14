@@ -10,6 +10,7 @@ const NOTIFICATION_URL = process.env.REACT_APP_NOTIFICATION_URL;
 const MP_API_WALLET_URL = process.env.REACT_APP_MP_API_WALLET_URL;
 const BACKEND_API_URL = process.env.REACT_APP_BACKEND_API_URL;
 const FRONTEND_API_URL = process.env.REACT_APP_FRONTEND_API_URL;
+const port = process.env.PORT;
 
 const client = new MercadoPagoConfig({ accessToken: MERCADOPAGO_ACCESS_TOKEN });
 const app = express();
@@ -86,3 +87,7 @@ const serviciosPago = async (idCompra) => {
         console.error("Error al actualizar pedido:", error);
     }
 };
+
+app.listen(port, () => {
+    console.log(`Servidor escuchando en el puerto ${port}`);
+});
