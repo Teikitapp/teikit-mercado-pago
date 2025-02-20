@@ -12,7 +12,7 @@ const BACKEND_API_URL = process.env.REACT_APP_BACKEND_API_URL;
 const FRONTEND_API_URL = process.env.REACT_APP_FRONTEND_API_URL;
 const port = process.env.REACT_APP_PORT;
 
-const client = new MercadoPagoConfig({ accessToken: 'APP_USR-3395215788216867-021920-190239acdb626b5ec86f9ea5aa271b02-2280350656' });
+const client = new MercadoPagoConfig({ accessToken: MERCADOPAGO_ACCESS_TOKEN });
 const app = express();
 let idCompra = null, idDelPedido = null, casillero = null;
 
