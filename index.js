@@ -37,7 +37,7 @@ app.post("/create_preference", async (req, res) => {
                 unit_price: Number(req.body.price)
             }],
             back_urls: { success: SUCCESS_URL, failure: FAILURE_URL, pending: PENDING_URL },
-            notification_url: NOTIFICATION_URL
+            notification_url: "https://30e8-45-238-155-49.ngrok-free.app/webhook"
         };
         const preference = new Preference(client);
         const result = await preference.create({ body });
