@@ -17,7 +17,7 @@ const app = express();
 let idCompra = null, idDelPedido = null, casillero = null;
 
 app.use(cors({
-    origin: FRONTEND_API_URL,  // Solo permite solicitudes desde este dominio
+    origin: "*",  // Solo permite solicitudes desde este dominio
     methods: ['GET', 'POST'],         // Especifica los métodos permitidos
     allowedHeaders: ['Content-Type']  // Especifica los encabezados permitidos
   }));
