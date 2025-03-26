@@ -15,6 +15,8 @@ const client = new MercadoPagoConfig({ accessToken: MERCADOPAGO_ACCESS_TOKEN });
 const app = express();
 let idCompra = null, idDelPedido = null, casillero = null;
 
+console.log("Access Token:", process.env.MERCADOPAGO_ACCESS_TOKEN);
+
 app.use(cors({
     origin: "*", 
     methods: ['GET', 'POST'],         
